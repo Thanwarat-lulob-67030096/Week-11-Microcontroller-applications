@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/week11/project_week11/build/CMakeFiles/bootloader
+C:/week11/project_week11/build/CMakeFiles/bootloader.rule
+C:/week11/project_week11/build/CMakeFiles/bootloader-complete.rule
+C:/week11/project_week11/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/week11/project_week11/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/week11/project_week11/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/week11/project_week11/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/week11/project_week11/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/week11/project_week11/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/week11/project_week11/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

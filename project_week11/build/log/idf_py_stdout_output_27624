@@ -1,0 +1,42 @@
+Command: ninja all
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\week11\project_week11\build\bootloader\esp-idf\esptool_py && C:\Users\ACER\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/ACER/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/week11/project_week11/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/project_week11.c.obj
+In file included from C:/week11/project_week11/main/project_week11.c:5:
+C:/Users/ACER/esp/v5.5.1/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from C:/week11/project_week11/main/project_week11.c:6:
+C:/Users/ACER/esp/v5.5.1/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+C:/week11/project_week11/main/project_week11.c: In function 'app_main':
+C:/week11/project_week11/main/project_week11.c:16:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   16 |     adc1_config_channel_atten(ADC1_CHANNEL_6, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/ACER/esp/v5.5.1/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from C:/Users/ACER/esp/v5.5.1/esp-idf/components/driver/deprecated/driver/adc.h:15:
+C:/Users/ACER/esp/v5.5.1/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/week11/project_week11/main/project_week11.c:20:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   20 |     esp_adc_cal_characterize(ADC_UNIT_1, ADC_ATTEN_DB_11,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/ACER/esp/v5.5.1/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Building C object CMakeFiles/project_week11.elf.dir/project_elf_src_esp32.c.obj
+[8/10] Linking CXX executable project_week11.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/week11/project_week11/build/project_week11.bin
+[10/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\week11\project_week11\build\esp-idf\esptool_py && C:\Users\ACER\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/ACER/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/week11/project_week11/build/partition_table/partition-table.bin C:/week11/project_week11/build/project_week11.bin"
+project_week11.bin binary size 0x2e210 bytes. Smallest app partition is 0x100000 bytes. 0xd1df0 bytes (82%) free.
